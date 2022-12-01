@@ -21,9 +21,7 @@ fn calculate_maximum(file: &str) {
     // Reverse sort the array
     v.sort_by(|a,b| b.cmp(a));
 
-    // Slice out and sum the top 3
-    let slice : i32 = v[0..3].into_iter().sum();
-    println!("Max: {}, Sum of Top 3: {}", *v.iter().nth(0).unwrap(), slice);
+    println!("Max: {}, Sum of Top 3: {}", v[0], v[0..3].into_iter().sum::<i32>());
 
 }
 
