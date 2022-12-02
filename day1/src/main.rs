@@ -27,5 +27,5 @@ fn calculate_maximum(file: &str) {
 
 
 fn main() {
-    calculate_maximum("/home/demarr/Projects/aoc_2022/aoc_day1/res/input.txt");
+    calculate_maximum("/home/demarr/Projects/aoc_2022/day1/res/input.txt");
 }
