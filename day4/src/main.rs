@@ -33,8 +33,7 @@ fn part2(file : &str) -> u32 {
         let set2 :Vec<u32> = pair_set[1].split("-").map(|x| x.parse::<u32>().unwrap()).collect();
         let a = (set1[0]..=set1[1]).collect::<HashSet<_>>();
         let b = (set2[0]..=set2[1]).collect::<HashSet<_>>();
-        let c = a.intersection(&b).collect::<HashSet<_>>(); 
-        if c.len() > 0 {sum+=1;}
+        if a.intersection(&b).count() > 0 {sum+=1;}
     }
     return sum
 }
